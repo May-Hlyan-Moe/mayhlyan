@@ -1,0 +1,63 @@
+:root {
+     --h4-background: #d65a8f;
+}
+
+
+
+.head {
+     font-family: 'Quicksand', sans-serif;
+     background-color: #000000;
+     color: aliceblue;
+     }
+
+
+
+
+
+h4 {
+     text-align: center;
+}
+
+h1 {
+     text-align: center;
+}
+
+.container {
+     text-align: center;
+     margin: 50px;
+}
+
+#mdo {
+     background-color: var(--h4-background);
+}
+
+#one {
+     background-color: var(--h4-background);
+}
+
+#two {
+     background-color: var(--h4-background);
+}
+
+#three {
+     background-color: var(--h4-background);
+}
+
+img {
+     display: block;
+     margin: 0 auto;
+     margin-bottom: 50px;
+}
+
+#info {
+     text-align: start;
+}
+
+#icon {
+     font-size: 40px;
+}
+
+#my-project {
+     border-radius: 10px;
+}
+
