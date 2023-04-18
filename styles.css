@@ -16,10 +16,13 @@
 
 h4 {
      text-align: center;
+     padding: 15px;
 }
 
 h1 {
-     text-align: center;
+     text-align: left;
+     font-weight: bolder;
+     
 }
 
 .container {
@@ -29,6 +32,7 @@ h1 {
 
 #mdo {
      background-color: var(--h4-background);
+     
 }
 
 #one {
@@ -61,3 +65,41 @@ img {
      border-radius: 10px;
 }
 
+.nav-link {
+     color: #d65a8f;
+}
+
+.navbar-brand {
+     color: #d65a8f;
+}
+
+.btn-primary {
+     color: #000000 !important;
+     background-color: #d65a8f !important;
+     border: 1px solid aliceblue !important;
+     padding: 15px !important;
+     color: aliceblue !important;
+}
+
+.dropdown-toggle {
+     background-color: #d65a8f !important;
+     border: 1px solid aliceblue !important;
+}
+
+.dropdown-menu {
+     background-color: #343a40 !important;
+     
+}
+
+.dropdown-item {
+     color: #d65a8f !important;
+}
+
+.dropdown-divider {
+     background-color: var(--h4-background);
+}
+
+.contact {
+     background-color: var(--h4-background) !important;
+     color: aliceblue !important;
+}
