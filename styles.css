@@ -147,6 +147,10 @@ li {
      border-radius: 10px;
  }
 
+ .skill {
+     font-size: 20px;
+ }
+
 @media (max-width:573px) {
      .head {
           font-size: 20px;
@@ -164,5 +168,8 @@ li {
           font-size: 18px;
      }
 
+     .skill {
+          font-size: 15px;
+      }
      
 }
