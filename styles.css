@@ -66,6 +66,7 @@ img {
 
 #my-project {
      border-radius: 10px;
+     
 }
 
 .nav-link {
@@ -140,6 +141,12 @@ li {
      border: 1px solid aliceblue !important;
 }
 
+.img-fluid {
+     max-width: 100%;
+     height: auto;
+     border-radius: 10px;
+ }
+
 @media (max-width:573px) {
      .head {
           font-size: 20px;
@@ -157,7 +164,5 @@ li {
           font-size: 18px;
      }
 
-     img {
-          width: 200;
-     }
+     
 }
