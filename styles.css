@@ -8,21 +8,24 @@
      font-family: 'Quicksand', sans-serif;
      background-color: #000000;
      color: aliceblue;
-     }
-
-
-
-
+     font-size: 25px;
+}
 
 h4 {
      text-align: center;
      padding: 15px;
+     font-size: 2rem;
 }
 
 h1 {
-     text-align: left;
-     font-weight: bolder;
-     
+     text-align: center;
+     color: #d65a8f;
+     font-weight: 900;
+}
+
+.heading {
+     color: #d65a8f;
+     font-size: 30px;
 }
 
 .container {
@@ -67,11 +70,14 @@ img {
 
 .nav-link {
      color: #d65a8f;
+     font-size: 20px;
 }
 
-.navbar-brand {
-     color: #d65a8f;
+.nav-link:hover {
+     color: aliceblue;
 }
+
+
 
 .btn-primary {
      color: #000000 !important;
@@ -79,11 +85,14 @@ img {
      border: 1px solid aliceblue !important;
      padding: 15px !important;
      color: aliceblue !important;
+     font-size: 20px !important;
 }
 
 .dropdown-toggle {
      background-color: #d65a8f !important;
+     color: aliceblue !important;
      border: 1px solid aliceblue !important;
+     font-size: 20px;
 }
 
 .dropdown-menu {
@@ -93,13 +102,18 @@ img {
 
 .dropdown-item {
      color: #d65a8f !important;
+     font-size: 20px;
 }
 
 .dropdown-divider {
      background-color: var(--h4-background);
+     color: aliceblue;
 }
 
 .contact {
      background-color: var(--h4-background) !important;
      color: aliceblue !important;
 }
+
+
+
