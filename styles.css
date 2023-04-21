@@ -17,10 +17,21 @@ h4 {
      font-size: 2rem;
 }
 
-h1 {
-     text-align: center;
+.meImg {
+     border-radius: 100%;
+}
+
+#app{
+     font-size: 50px;
+     font-family: 'Lobster', cursive;
+}
+
+.typeText {
      color: #d65a8f;
-     
+}
+
+.typeCursor {
+     color: aliceblue;
 }
 
 .heading {
@@ -141,11 +152,6 @@ li {
      border: 1px solid aliceblue !important;
 }
 
-.img-fluid {
-     max-width: 100%;
-     height: auto;
-     border-radius: 10px;
- }
 
  .skill {
      font-size: 20px;
@@ -154,6 +160,10 @@ li {
  .schools {
      color: aliceblue;
      text-decoration: underline;
+ }
+
+ .title {
+     opacity: 0.6;
  }
 
 @media (max-width:573px) {
