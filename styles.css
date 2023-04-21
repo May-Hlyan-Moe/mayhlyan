@@ -175,6 +175,7 @@ li {
 
      .skill {
           font-size: 15px;
+          display: none;
       }
 
       img {
@@ -186,6 +187,8 @@ li {
      #my-project {
           display: none;
      }
+
+
      
      
 }
