@@ -18,7 +18,7 @@ h4 {
 }
 
 .meImg {
-     border-radius: 100%;
+     border-radius: 5%;
 }
 
 #app{
@@ -98,6 +98,11 @@ img {
      padding: 15px !important;
      color: aliceblue !important;
      font-size: 20px !important;
+     transition: transform 1s ease !important; 
+}
+
+.btn-primary:hover {
+     transform: scale(1.2);
 }
 
 .dropdown-toggle {
@@ -108,8 +113,7 @@ img {
 }
 
 .dropdown-menu {
-     background-color: #343a40 !important;
-     
+     background-color: #343a40 !important;   
 }
 
 .dropdown-item {
