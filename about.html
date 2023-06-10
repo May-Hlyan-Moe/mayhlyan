@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>May Hlyan Moe - about</title>
+    <link rel="stylesheet" href="./styles.css" >
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/aad74cd859.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:wght@600&family=Poppins:wght@200&family=Righteous&display=swap" rel="stylesheet">
+    <style>
+
+        body {
+            text-align: center;
+            background-color: aliceblue
+        }
+        
+
+        h2 {
+            margin: 40px;
+            text-align: center;
+            font-size: 50px;
+            font-family: 'Pacifico', cursive;
+        }
+
+        h3 {
+            font-size: 40px;
+            font-family: 'Righteous', cursive;
+        }
+
+        p {
+            margin-top: 50px;
+            font-size: 20px;
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .title {
+            color: #929AAB;
+        }
+
+        h4 {
+            padding-top: 10px;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .background {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .myan-logo {
+            width: 75px;
+        }
+
+        .sag-logo {
+            width: 60px;
+        }
+
+        .shecodes-logo {
+            width: 60px;
+        }
+
+        .info {
+            font-size: 20px;
+        }
+
+        .skills {
+            text-align: center;
+            margin: 50px 50px 50px 0px;
+        }
+
+        .skill {
+            width: 50px;
+            padding: 5px;
+        }
+
+        .html {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .rotating {
+            animation: rotating 10s linear infinite;
+        }
+
+        @keyframes rotating {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(369deg);
+        }
+        }
+
+        table {
+            font-size: 15px;
+            text-align: left;
+            font-family: 'Courier New', Courier, monospace;
+            border-radius: 20px;
+        }
+
+        /* ------------ BASE ------------ */
+        *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+
+        /* -------------- BUTTON -------------- */
+        .btn{
+        background-color: #fff;
+        width: 40px;
+        height: 40px;
+        border-radius: 10em;
+        padding: 0 0.5em;
+
+        box-shadow: inset 0 8px 60px rgba(0,0,0, .1),
+                    inset 0 8px 8px rgba(0,0,0, .1),
+                    inset 0 -4px 4px rgba(0,0,0, .1);
+
+        position: relative;
+
+        display: inline-flex;
+        align-items: center;
+
+        cursor: pointer;
+        }
+
+        .btn__indicator{
+        background-color: #fff;
+        width: 30px;
+                    height: 30px;
+        border-radius: 50%;
+
+        position: absolute;
+
+        box-shadow: 0 8px 40px rgba(0,0,0, .2);
+
+        transition: transform .3s ease;
+        }
+
+        .btn__icon-container{
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+
+        .btn__icon{
+        color: #2b2b2b;
+        font-size: 1.5rem;
+        display: flex;
+        }
+
+        .btn:hover {
+            background-color: #1E272E;
+        }
+
+        .btn__icon:hover {
+            color: aliceblue;
+            transition: 0.7s;
+            transform: rotateZ(360deg);
+        }
+
+        /* -------------- DARKMODE  btn -------------- */
+        
+        .darkmode .btn{
+        box-shadow: inset 0 8px 60px rgba(0,0,0, .3),
+                    inset 8px 0 8px rgba(0,0,0, .3),
+                    inset 0 -4px 4px rgba(0,0,0, .3);
+        }
+
+        .darkmode .btn__indicator{
+        transform: translateX(7em);
+        background-color: #2b2b2b;
+        box-shadow: 0 8px 40px rgba(0,0,0, .3);
+        }
+
+        .darkmode .btn__icon{
+        color: #fff;
+        }
+
+        @media(max-width:768px) {
+            p {
+                margin: 0 auto;
+            }
+        }
+
+                        
+    </style>
+</head>
+<body onload="onload()">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Hello, I'm <br> May Hlyan Moe</h2>
+            </div>
+            <div class="col-md-6">
+                <p class="container">
+                    I believe Technology is filled with a sense of well-being to humans.<br />
+                    I'm highly interested in IT and UX/UI design. I love to help people to create their Exclusive  Websites.
+
+                </p>
+            </div>
+        </div>
+    </div>
+    
+   
+
+    
+    <br><br><br>
+
+    <h3>Background</h3>
+    <br />
+
+    <div class="container background">
+        <div class="row">
+            <div class="col-4">
+                <img src="https://sagihs.education/wp-content/uploads/2021/11/myanmar-seal.png" class="myan-logo"/>
+                <h4>BEHS</h4>
+                <hr />
+                <strong>High School Certificate</strong>
+                <br />
+                2019-2020
+            </div>
+            <div class="col-4">
+                <img src="https://sagihs.education/wp-content/uploads/2022/10/SAG-Logo-1536x1536.png" class="sag-logo"/>
+                <h4>SAG</h4>
+                <hr />
+                <strong>Gobal English Language</strong>
+                <br />
+                2022-2023
+            </div>
+            <div class="col-4">
+                <img src="data:image/jpeg;base64,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" class="shecodes-logo" />
+                <h4>SheCodes</h4>
+                <hr />
+                <strong>Front-end Development</strong>
+                <br />
+                March 2023-current
+            </div>
+        </div>
+    </div>
+
+    <br /><br /><br><br>
+
+    
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p>Things I want you to know</p>
+                <h3>Personal Infomation</h3>
+                <br><br>
+                <table class="table ">
+                    <tbody>
+                        <tr>
+                          <th scope="row"></th>
+                          <td>name :</td>
+                          <td>May Hlyan Moe</td>
+                        </tr>
+                        <tr>
+                          <th scope="row"></th>
+                          <td>age :</td>
+                          <td>19 years</td>
+                        </tr>
+                        <tr>
+                          <th scope="row"></th>
+                          <td>nationality :</td>
+                          <td>Mayanmarian 🇲🇲</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br><br><br>
+            </div>
+
+            <div class="col-md-6">
+                <p>What can I do</p>
+                <h3>Skills I've learned</h3>
+                <div class="container skills">
+                    <div class="row">
+                       <div class="col-3">
+                            <img src="https://www.shecodes.io/assets/logos/technologies/html-0604a6b4c136a971d7ea5d7f5941216ae895093c636027fc3ac53297fea9a502.png"  class="skill"/>
+                            <br /> <span class="html">HTML</span>
+                       </div>
+                       <div class="col-3">
+                            <img src="https://www.shecodes.io/assets/logos/technologies/css-c4554008372faa24096997403ee46f3347a87b8f1636cfb148109bac867c03bb.png"  class="skill"/>
+                            <br /> <span class="html">CSS</span>
+                       </div>
+                       <div class="col-3">
+                            <img src="https://www.shecodes.io/assets/logos/technologies/javascript-66f17d0db91bf422711333a5899e3ce6e952071c8c7b747021029a41fbf42cd7.png"  class="skill"/>
+                            <br /> <span class="html">JavaScript</span>
+                       </div>
+                       <div class="col-3">
+                            <img src="https://www.shecodes.io/assets/logos/technologies/editor-ef3d938168e4f16659b3579e8391c37b6ed45eb4e48039eb12cf809e78373e39.png"  class="skill"/>
+                            <br /> <span class="html">Editor</span>
+                       </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-3">
+                             <img src="https://www.shecodes.io/assets/logos/technologies/api-2c51a0e435d71436f197dbc33a1c52716491a482f87c9d229504bbeada6a516c.png"  class="skill api"/>
+                             <br /> <span class="html">API</span>
+                        </div>
+                        <div class="col-3">
+                             <img src="https://www.shecodes.io/assets/logos/technologies/github-cc6fbd641ec9f644611a5d0d7c7f00a52fc711b39152edb8cb5e80b45bdcbba8.png"  class="skill"/>
+                             <br /> <span class="html">GitHub</span>
+                        </div>
+                        <div class="col-3">
+                             <img src="https://www.shecodes.io/assets/logos/technologies/bootstrap-b63cede059eb73dc7036db08fc04826683fce2a3f7a557b40bc68cc3d69b1adb.png"  class="skill"/>
+                             <br /> <span class="html">Bootstrap</span>
+                        </div>
+                        <div class="col-3">
+                             <img src="https://www.shecodes.io/assets/logos/technologies/hosting-d912d77599fd9aab7aab62e8ee20cab5e69c1c03cb87b8a38f735f49b3609758.png"  class="skill"/>
+                             <br /> <span class="html">Hosting</span>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-3">
+                             <img src="https://www.shecodes.io/assets/logos/technologies/flexbox-8a353b63227c7cc713bdabc27322ece43c38e5c590fbf4a61c479884e7c1ba09.png"  class="skill"/>
+                             <br /> <span class="html">Flexbox</span>
+                        </div>
+                        <div class="col-3">
+                             <img src="https://www.shecodes.io/assets/logos/technologies/seo-e96310672f07334067bdecbdccfe65c39d5a178e886a8682bf9ae0555f11d529.png"  class="skill"/>
+                             <br /> <span class="html">SEO</span>
+                        </div>
+                        <div class="col-3">
+                             <img src="https://www.shecodes.io/assets/logos/technologies/responsive-bb3ce4b4a67108b0c547648b0b9da19711e8a30cb94626ebe2cf80697119e807.png"  class="skill"/>
+                             <br /> <span class="html">Responsive</span>
+                        </div>
+                        <div class="col-3">
+                             <img src="https://www.shecodes.io/assets/logos/technologies/react-600b92c82a6b987573201ac95a30d8fcd6789a803c473337aadb2c2865cb7919.png"  class="skill rotating"/>
+                             <br /> <span class="html">React</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br>
+
+    <footer class="fixed-bottom">
+        <a href="./home.html" class="a-for-footer"><i class="fa-solid fa-house" ></i></a>
+        <a href="./work.html" class="a-for-footer"><i class="fa-solid fa-code" ></i></a>
+        <a href="./contact.html" class="a-for-footer"><i class="fa-solid fa-address-card" ></i></a>
+        <div class="btn" onclick="darkmode()">
+            <div class="btn_indicator">
+                <div class="btn_icon-container">
+                    <i class="btn__icon fa-solid fa-moon"></i>
+                </div>
+            </div>
+        </div>
+    </footer> 
+
+    <script src="./scripts.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+</body>
+</html>

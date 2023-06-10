@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>May Hlyan Moe - contact</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/aad74cd859.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:wght@600&family=Poppins:wght@200&family=Righteous&display=swap" rel="stylesheet">
+    <style>
+        h1 {
+            font-size: 40px;
+            font-family: 'Pacifico', cursive;
+            margin-top: 20px;
+        }
+
+        h2 {
+            font-size: 80px;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .header {
+            margin-top: 20px;
+        }
+
+        hr {
+            margin-top: 30px;
+            margin-bottom: 0;
+        }
+
+        p {
+            font-family: 'Poppins', sans-serif;
+            text-align: right;
+            font-size: large;
+        }
+
+        .bottom {
+            margin-top: 300px;
+            margin-bottom: 100px;
+        }
+
+        .title {
+            font-size: 20px;
+            font-family: 'Righteous', cursive;
+        }
+
+        .email {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 20px;
+            margin: 30px 10px;
+        }
+
+        .dark-mode .a-for-footer {
+            color: var(--color-in-dark-mode);
+        }
+
+        .i-in-contact {
+            font-size: 40px;
+            padding: 5px;
+        }
+
+        .bottom-two {
+            padding: 30px;
+        }
+
+        /* ------------ BASE ------------ */
+        *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+
+        /* -------------- BUTTON -------------- */
+        .btn{
+        background-color: #fff;
+        width: 40px;
+        height: 40px;
+        border-radius: 10em;
+        padding: 0 0.5em;
+
+        box-shadow: inset 0 8px 60px rgba(0,0,0, .1),
+                    inset 0 8px 8px rgba(0,0,0, .1),
+                    inset 0 -4px 4px rgba(0,0,0, .1);
+
+        position: relative;
+
+        display: inline-flex;
+        align-items: center;
+
+        cursor: pointer;
+        }
+
+        .btn__indicator{
+        background-color: #fff;
+        width: 30px;
+                    height: 30px;
+        border-radius: 50%;
+
+        position: absolute;
+
+        box-shadow: 0 8px 40px rgba(0,0,0, .2);
+
+        transition: transform .3s ease;
+        }
+
+        .btn__icon-container{
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+
+        .btn__icon{
+        color: #2b2b2b;
+        font-size: 1.5rem;
+        display: flex;
+        }
+
+        .btn:hover {
+            background-color: #1E272E;
+        }
+
+        .btn__icon:hover {
+            color: aliceblue;
+            transition: 0.7s;
+            transform: rotateZ(360deg);
+        }
+
+        /* -------------- DARKMODE  btn -------------- */
+        
+        .darkmode .btn{
+        box-shadow: inset 0 8px 60px rgba(0,0,0, .3),
+                    inset 8px 0 8px rgba(0,0,0, .3),
+                    inset 0 -4px 4px rgba(0,0,0, .3);
+        }
+
+        .darkmode .btn__indicator{
+        transform: translateX(7em);
+        background-color: #2b2b2b;
+        box-shadow: 0 8px 40px rgba(0,0,0, .3);
+        }
+
+        .darkmode .btn__icon{
+        color: #fff;
+        }
+
+
+
+
+        @media(max-width:992px) {
+            h2 {
+                margin-bottom: 40px;
+            }
+
+            .bottom {
+                margin-top: 170px;
+            }
+
+            .bottom-two {
+                padding: 10px;
+            }
+
+            hr {
+                margin-top: 0;
+            }
+
+            h1 {
+                font-size: 40px;
+            }
+        }
+
+        @media(max-width:768px) {
+            hr {
+                margin-top: 0;
+            }
+
+            h1 {
+                font-size: 40px;
+            }
+        }
+        
+    </style>
+</head>
+<body onload="onload()">
+    <div class="container header">
+        <div class="row">
+            <div class="col-lg-5">
+                <h1>Ready to work with me ?</h1>
+            </div>
+            <div class="col-lg-7">
+                <br>
+                <hr>
+                <p>Let's improve your processess together!</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container bottom">
+        <div class="row">
+            <div class="col-lg-4">
+                <h2>Contact</h2>
+            </div>
+            <div class="col-lg-8 bottom-two">
+                <div class="row">
+                    <div class="col-6">
+                        <span class="title">EMAIL</span><br>
+                        <a href="mailto:kiepuu1@gmail.com " class="email" >kiepuu1@gmail.com</a>
+                    </div>
+                    <div class="col-6">
+                        <span class="title">SOCIAL</span><br>
+                        <div class="container">
+                            <a href="https://www.facebook.com/profile.php?id=100068449933610&mibextid=LQQJ4d" class="i-in-contact"><i class="fa-brands fa-square-facebook i-in-home"></i></a>
+                            <a href="https://github.com/May-Hlyan-Moe" class="i-in-contact"><i class="fa-brands fa-github i-in-home"></i></a> 
+                            <a href="https://instagram.com/mayhlyan_?igshid=MmIzYWVlNDQ5Yg==" class="i-in-contact"><i class="fa-brands fa-instagram i-in-home"></i></a> 
+                            <a href="https://www.linkedin.com/in/may-hlyan-moe-7b4082275" class="i-in-contact"><i class="fa-brands fa-linkedin i-in-home"></i></a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="fixed-bottom">
+        <a href="./home.html" class="a-for-footer"><i class="fa-solid fa-house" ></i></a>
+        <a href="./about.html" class="a-for-footer"><i class="fa-solid fa-user"></i></a>
+        <a href="./work.html" class="a-for-footer"><i class="fa-solid fa-code" ></i></a>
+        <div class="btn" onclick="darkmode()">
+            <div class="btn_indicator">
+                <div class="btn_icon-container">
+                    <i class="btn__icon fa-solid fa-moon"></i>
+                </div>
+            </div>
+        </div>
+    </footer> 
+    
+
+    <script src="./scripts.js"></script>
+</body>
+</html>
