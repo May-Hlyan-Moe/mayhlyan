@@ -12,12 +12,6 @@ body {
     color: var(--color-in-light-mode);
 }
 
-/*about.....*/
-
-.dark-mode table {
-    color: var(--color-in-dark-mode);
-}
-
 /* all ....*/
 .dark-mode {
     background-color: var(--background-in-dark-mode);

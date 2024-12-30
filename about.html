@@ -6,24 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>May Hlyan Moe - about</title>
     <link rel="stylesheet" href="./styles.css" >
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/aad74cd859.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:wght@600&family=Poppins:wght@200&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <style>
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
 
         body {
             text-align: center;
             background-color: aliceblue
         }
-        
 
         h2 {
             margin: 40px;
             text-align: center;
             font-size: 50px;
-            font-family: 'Pacifico', cursive;
+            font-family: 'Playfair Display', serif;
         }
 
         h3 {
@@ -63,13 +70,13 @@
             width: 100px;
         }
 
+        .uopeople-logo {
+            width: 130px;
+        }
+
         #y-max {
             display: block;
             margin: 0 auto;
-        }
-
-        .eucalyptus-logo {
-            width: 87px;
         }
 
         .shecodes-logo {
@@ -105,68 +112,53 @@
         100% {
             transform: rotate(369deg);
         }
+
         }
 
         table {
             font-size: 15px;
             text-align: left;
-            font-family: 'Courier New', Courier, monospace;
             border-radius: 20px;
+            font-weight: bolder;
         }
 
-        /* ------------ BASE ------------ */
-        *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        }
-
-        /* -------------- BUTTON -------------- */
         .btn{
-        background-color: #fff;
-        width: 40px;
-        height: 40px;
-        border-radius: 10em;
-        padding: 0 0.5em;
-
-        box-shadow: inset 0 8px 60px rgba(0,0,0, .1),
-                    inset 0 8px 8px rgba(0,0,0, .1),
-                    inset 0 -4px 4px rgba(0,0,0, .1);
-
-        position: relative;
-
-        display: inline-flex;
-        align-items: center;
-
-        cursor: pointer;
+            background-color: #fff;
+            width: 40px;
+            height: 40px;
+            border-radius: 10em;
+            padding: 0 0.5em;
+            box-shadow: inset 0 8px 60px rgba(0,0,0, .1),
+                        inset 0 8px 8px rgba(0,0,0, .1),
+                        inset 0 -4px 4px rgba(0,0,0, .1);
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+            cursor: pointer;
         }
 
         .btn__indicator{
-        background-color: #fff;
-        width: 30px;
-                    height: 30px;
-        border-radius: 50%;
-
-        position: absolute;
-
-        box-shadow: 0 8px 40px rgba(0,0,0, .2);
-
-        transition: transform .3s ease;
+            background-color: #fff;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            position: absolute;
+            box-shadow: 0 8px 40px rgba(0,0,0, .2);
+            transition: transform .3s ease;
         }
 
         .btn__icon-container{
-        width: 100%;
-        height: 100%;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         .btn__icon{
-        color: #2b2b2b;
-        font-size: 1.5rem;
-        display: flex;
+            color: #2b2b2b;
+            font-size: 1.5rem;
+            display: flex;
         }
 
         .btn:hover {
@@ -179,22 +171,20 @@
             transform: rotateZ(360deg);
         }
 
-        /* -------------- DARKMODE  btn -------------- */
-        
         .darkmode .btn{
-        box-shadow: inset 0 8px 60px rgba(0,0,0, .3),
-                    inset 8px 0 8px rgba(0,0,0, .3),
-                    inset 0 -4px 4px rgba(0,0,0, .3);
+            box-shadow: inset 0 8px 60px rgba(0,0,0, .3),
+                        inset 8px 0 8px rgba(0,0,0, .3),
+                        inset 0 -4px 4px rgba(0,0,0, .3);
         }
 
         .darkmode .btn__indicator{
-        transform: translateX(7em);
-        background-color: #2b2b2b;
-        box-shadow: 0 8px 40px rgba(0,0,0, .3);
+            transform: translateX(7em);
+            background-color: #2b2b2b;
+            box-shadow: 0 8px 40px rgba(0,0,0, .3);
         }
 
         .darkmode .btn__icon{
-        color: #fff;
+            color: #fff;
         }
 
         @media(max-width:768px) {
@@ -220,9 +210,6 @@
             </div>
         </div>
     </div>
-    
-   
-
     
     <br><br><br>
 
@@ -258,46 +245,27 @@
     </div>
     <br /><br />
     <div class="container">
+        <div class="row">
             <div class="col-4" id="y-max">
                 <img src="https://www.ymaxuniversity.edu.mm/sites/default/files/YMU-Logo_0.png" class="y-max-logo" />
                 <h4>Y-MAX University</h4>
                 <hr />
                 <strong>Web Development</strong>
                 <br />
-                2023-current
+                2023-2024
+            </div>
+            <div class="col-4" id="y-max">
+                <img src="https://th.bing.com/th/id/OIP.Qj21bTjCg2e-dQNaybgCAQAAAA?w=300&h=88&rs=1&pid=ImgDetMain" class="uopeople-logo" />
+                <h4>UoPeople</h4>
+                <hr />
+                <strong>Computer Science</strong>
+                <br />
+                2025-current
             </div>
         </div>
     </div>
 
     <br /><br /><br><br>
-
-    <h3>Experience</h3>
-    <br />
-
-    <div class="container background">
-        <div class="row">
-            <div class="col-4 container">
-                <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/091/924/original/blossomccy.jpg?1690988636" class="sag-logo"/>
-                <h4>Blossom CCY</h4>
-                <hr />
-                <strong>Medical Representative</strong>
-                <br />
-                2023-current
-            </div>
-            <div class="col-4 container">
-                <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/096/372/original/eucalyptus.jpg?1694273465" class="eucalyptus-logo"/>
-                <h4>Eucalyptus Co., Ltd.</h4>
-                <hr />
-                <strong>Sale Representative</strong>
-                <br />
-                2023-current
-            </div>
-        </div>
-    </div>
-
-    <br /><br /><br><br>
-
-    
 
     <div class="container">
         <div class="row">
@@ -305,7 +273,7 @@
                 <p>Things I want you to know</p>
                 <h3>Personal Information</h3>
                 <br><br>
-                <table class="table ">
+                <table class="table table-striped">
                     <tbody>
                         <tr>
                           <th scope="row"></th>
@@ -315,12 +283,12 @@
                         <tr>
                           <th scope="row"></th>
                           <td>age :</td>
-                          <td>19 years</td>
+                          <td>20 years</td>
                         </tr>
                         <tr>
                           <th scope="row"></th>
                           <td>nationality :</td>
-                          <td>Myanmarian 🇲🇲</td>
+                          <td>Myanmarian</td>
                         </tr>
                     </tbody>
                 </table>
@@ -333,11 +301,11 @@
                 <div class="container skills">
                     <div class="row">
                        <div class="col-3">
-                            <img src="https://www.shecodes.io/assets/logos/technologies/html-0604a6b4c136a971d7ea5d7f5941216ae895093c636027fc3ac53297fea9a502.png"  class="skill"/>
+                            <img src="https://s3.amazonaws.com/shecodesio-production/skills/thumbnails/000/000/010/original/icon-html.png?1711034484"  class="skill"/>
                             <br /> <span class="html">HTML</span>
                        </div>
                        <div class="col-3">
-                            <img src="https://www.shecodes.io/assets/logos/technologies/css-c4554008372faa24096997403ee46f3347a87b8f1636cfb148109bac867c03bb.png"  class="skill"/>
+                            <img src="https://s3.amazonaws.com/shecodesio-production/skills/thumbnails/000/000/004/original/icon-css.png?1711033534"  class="skill"/>
                             <br /> <span class="html">CSS</span>
                        </div>
                        <div class="col-3">
@@ -345,7 +313,7 @@
                             <br /> <span class="html">JavaScript</span>
                        </div>
                        <div class="col-3">
-                            <img src="https://www.shecodes.io/assets/logos/technologies/editor-ef3d938168e4f16659b3579e8391c37b6ed45eb4e48039eb12cf809e78373e39.png"  class="skill"/>
+                            <img src="https://s3.amazonaws.com/shecodesio-production/skills/thumbnails/000/000/005/original/editor.png?1701382155"  class="skill"/>
                             <br /> <span class="html">Editor</span>
                        </div>
                     </div>
@@ -375,7 +343,7 @@
                              <br /> <span class="html">Flexbox</span>
                         </div>
                         <div class="col-3">
-                             <img src="https://www.shecodes.io/assets/logos/technologies/seo-e96310672f07334067bdecbdccfe65c39d5a178e886a8682bf9ae0555f11d529.png"  class="skill"/>
+                             <img src="https://s3.amazonaws.com/shecodesio-production/skills/thumbnails/000/000/014/original/seo.png?1701426631"  class="skill"/>
                              <br /> <span class="html">SEO</span>
                         </div>
                         <div class="col-3">
@@ -390,8 +358,12 @@
                     <br>
                     <div class="row">
                         <div class="col-3">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/2560px-PHP-logo.svg.png" class="skill" />
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/2560px-PHP-logo.svg.png" class="skill" style="width: 60px; margin: 6px 0;"/>
                             <br> <span class="html">PHP</span>
+                        </div>
+                        <div class="col-3">
+                            <img src="https://th.bing.com/th/id/R.bd8ed98636fdcbde83f7e9c386d08f5f?rik=zq99b6rKAMR1MQ&riu=http%3a%2f%2fddinter.scbdd.com%2fstatic%2fcommon%2ffooter%2fimgs%2fmysql-logo.png&ehk=HUZLXSGUiNzuodt7UWUFNbJN8w08UC%2bS9lZg1%2bMKr3Q%3d&risl=&pid=ImgRaw&r=0" class="skill" />
+                            <br> <span class="html">MySql</span>
                         </div>
                     </div>
                 </div>
@@ -415,6 +387,10 @@
     </footer> 
 
     <script src="./scripts.js"></script>
-    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script>
+        document.querySelector(".btn").addEventListener("click", function() {
+             document.querySelector("table").classList.toggle("table-dark"); 
+            });
+    </script>
 </body>
 </html>
