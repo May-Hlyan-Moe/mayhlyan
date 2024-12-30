@@ -37,8 +37,8 @@
     h1 {
       font-size: 60px;
       font-family: 'Playfair Display', serif;
-      padding: 20px;
       text-align: center;
+      text-decoration: underline;
     }
 
     .heading {
@@ -50,20 +50,11 @@
       display: grid;
       place-items: center;
       align-content: center;
-      min-height: 100vh;
+      margin-top: 30px;
     }
 
-    .hidden {
-      opacity: 0;
-      filter: blur(5px);
-      transform: translateX(-100%);
-      transition: all 1s;
-    }
-
-    .show {
-      opacity: 1;
-      filter: blur(0);
-      transform: translateX(0);
+    p {
+      width: 500px;
     }
 
     .btn {
@@ -137,182 +128,157 @@
       border-radius: 20px;
       margin: 0 auto;
       display: block;
+      transition: transform 0.3s ease-in-out;
     }
 
-    #image .imgThumb:hover img {
-      filter: grayscale(100%);
-      -webkit-filter: grayscale(100%);
-      transition: filter 0.5s ease-in-out;
-    }
-
-    #image .imgThumb span {
-      display: none;
-      position: absolute;
-      top: 290px;
-      left: 240px;
-    }
-
-    #image .imgThumb:hover span {
-      display: block;
-    }
-
-    span {
-      font-family: 'Courier New', Courier, monospace;
-    }
-
-    #image .imgThumb span input[type="button"] {
-      width: 200px;
-      height: 40px;
-      background-color: #4F98CA;
-      border-radius: 5px;
-      box-shadow: 0 0 10px 2px #000;
-      border: 2px solid #fff;
-      color: #fff;
-      font-size: 18px;
-      cursor: pointer;
+    #image .imgThumb img:hover {
+      transform: scale(1.02);
     }
 
     @media(max-width:576px) {
       img {
         width: 300px;
       }
-
-      #image .imgThumb span {
-        top: 290px;
-        left: 100px;
-      }
     }
   </style>
 </head>
 
-<body onload="onload()">
-  <section class="hidden">
-    <h1>My Work</h1>
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <div id="image">
-            <p class="imgThumb">
-              <img
-                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/080/345/original/weather_react_app.jpg?1683171865"
-                width="400" alt="weather react app" id="img-project" />
-              <span>
-                <input type="button" value="🔗 Launch project"
-                  onclick="window.location='https://weather-react-app-by-mayhlyanmoe.netlify.app/';">
-              </span>
-            </p>
-          </div>
-        </div>
-        <div class="col">
-          <div class="heading">Weather React App</div>
+<body onload="onload()" class="container">
+  <h1>My Work</h1>
+  <!--weather react app-->
+  <section>
+    <div id="image">
+      <p class="imgThumb">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/080/345/original/weather_react_app.jpg?1683171865"
+          width="400" alt="weather react app" id="img-project" onclick="window.location='https://weather-react-app-by-mayhlyanmoe.netlify.app/';" />
+        <span>
+      </p>
+    </div>
+    <div class="heading">Weather React App</div>
           <p>
-            My very first project built with HTML, advanced CSS and React.
+            My very first project built with HTML, advanced CSS, and React, displays current weather information for various cities, featuring a sleek and responsive design.
             <br>
             (Click image to launch project)
           </p>
-        </div>
-      </div>
-    </div>
-    <br><br>
   </section>
-  <br>
-
-  <section class="hidden">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm">
-          <div id="image">
-            <p class="imgThumb">
-              <img
-                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/086/666/original/IMG_1514.jpeg?1687445107"
-                width="400" alt="global clock" id="img-project" />
-              <span>
-                <input type="button" value="🔗 Launch project"
-                  onclick="window.location='https://global-clock-by-mayhlyanmoe.netlify.app/index.html';">
-              </span>
-            </p>
-          </div>
-
-        </div>
-        <div class="col-sm">
-          <div class="heading">
-            <figcaption>Global Clock</figcaption>
-          </div>
-
-          <br>
-          (Click image to launch project)
+  <hr>
+  
+  <!--global clock-->
+  <section>
+    <div id="image">
+      <p class="imgThumb">
+        <img
+          src="https://res.cloudinary.com/df1ll9klv/image/upload/v1735556909/hlyaljviplep5e1xwclt.jpg"
+          width="500" alt="weather react app" id="img-project" onclick="window.location='https://global-clock-by-mayhlyanmoe.netlify.app/index.html';" />
+        <span>
+      </p>
+    </div>
+    <div class="heading">Global Clock</div>
+          <p>
+            The Global Clock is an early project of mine, built with HTML, advanced CSS, and JavaScript. It displays current times for cities worldwide, following the cities shown in the images, featuring a sleek and responsive design.
+            <br>
+            (Click image to launch project)
           </p>
-        </div>
-      </div>
-    </div>
-    <br><br>
   </section>
-
-  <section class="hidden">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm">
-          <div id="image">
-            <p class="imgThumb">
-              <img
-                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/095/588/original/word-wizard.jpg?1693740836"
-                width="400" alt="word wizard" id="img-project" />
-              <span>
-                <input type="button" value="🔗 Launch project"
-                  onclick="window.location='https://word-wizard-001.netlify.app/';">
-              </span>
-            </p>
-          </div>
-
-        </div>
-        <div class="col-sm">
-          <div class="heading">
-            <figcaption>Word Wizard</figcaption>
-          </div>
-
-          <br>
-          (Click image to launch project)
-          </p>
-        </div>
-      </div>
-    </div>
-    <br><br>
-  </section>
-
   <hr>
 
-  <section class="hidden">
-    <h1>My Achievement</h1>
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <div id="image">
-            <p class="imgThumb">
-              <img
-                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/085/045/original/IMG_1096.jpeg?1686381789"
-                width="400px" alt="a visit to london" id="img-project" />
-              <span>
-                <input type="button" value="🔗 Launch project"
-                  onclick="window.location='https://www.shecodes.io/contests/dream-travel-destination-challenge/contest_entries/may-hlyan-moe-myanmarian/preview';">
-              </span>
-            </p>
-          </div>
-        </div>
-        <div class="col">
-          <div class="heading">A Visit to London</div>
+  <!--word wizard-->  
+  <section>
+    <div id="image">
+      <p class="imgThumb">
+        <img
+          src="https://res.cloudinary.com/df1ll9klv/image/upload/v1735555320/vqrngwjxxej894zdz2pt.jpg"
+          width="500" alt="weather react app" id="img-project" onclick="window.location='https://word-wizard-001.netlify.app/';" />
+        <span>
+      </p>
+    </div>
+    <div class="heading">Word Wizard</div>
           <p>
-            I won the first place at the
-            <a href="https://www.shecodes.io/contests/dream-travel-destination-challenge/results">Dream Travel
-              Destination Challenge</a>
-            hosted by SheCodes with this project.
+            Word-Wizard is a dictionary app built with HTML, advanced CSS, and React. It provides definitions, several meanings, examples, synonyms, and phonetic text for various words. It even includes images of the searched word, all within a sleek and responsive design.
             <br>
             (Click image to launch project)
-          </p><br><br><br><br>
-        </div>
-      </div>
-    </div>
-    <br><br>
+          </p>
   </section>
+  <hr>
+  
+  <!--ANGEL cake shop-->
+  <section>
+    <div id="image">
+      <p class="imgThumb">
+        <img
+          src="https://res.cloudinary.com/df1ll9klv/image/upload/v1735556124/kdwvkpqi2gglrqyaszt9.jpg"
+          width="500" alt="weather react app" id="img-project" onclick="window.location='https://mayhlyanmoe-angel-cake-shop.netlify.app/';" />
+        <span>
+      </p>
+    </div>
+    <div class="heading">ANGEL Cake Shop</div>
+          <p>
+            ANGEL Cake Shop is a beautifully designed website built with HTML and advanced CSS. It showcases a variety of delectable cakes, featuring high-quality images, and pricing information. The site is designed to be sleek and responsive, ensuring a delightful user experience across all devices.
+            <br>
+            (Click image to launch project)
+          </p>
+  </section>
+  <hr>
+
+  <!--ENG Lab School-->
+  <section>
+    <div id="image">
+      <p class="imgThumb">
+        <img
+          src="https://res.cloudinary.com/df1ll9klv/image/upload/v1735556372/yrunvmvjrsz1k8nla9sm.jpg"
+          width="500" alt="weather react app" id="img-project" onclick="window.location='https://mayhlyanmoe-englab-school.netlify.app/';" />
+        <span>
+      </p>
+    </div>
+    <div class="heading">ENG Lab School</div>
+          <p>
+            ENG Lab School is a practice website built with HTML, CSS, and JavaScript. It showcases available courses and instructors in a clean, responsive design.
+            <br>
+            (Click image to launch project)
+          </p>
+  </section>
+  <hr>
+
+  <h1>My Blog</h1>
+  <!--a visit to bagan-->
+  <section>
+    <div id="image">
+      <p class="imgThumb">
+        <img
+          src="https://res.cloudinary.com/df1ll9klv/image/upload/v1735549891/if6aglzp9dz5vyxyoqjn.jpg"
+          width="500" alt="weather react app" id="img-project" onclick="window.location='https://mayhlyanmoe-bagan-travel-blog.netlify.app/';" />
+        <span>
+      </p>
+    </div>
+    <div class="heading">A Visit to Bagan</div>
+          <p>
+            A Visit to Bagan is a travel website built with HTML, CSS, a bit of jQuery, and Bootstrap for a highly responsive design. It showcases captivating vlogs of Bagan, offering an immersive experience with its user-friendly and mobile-optimized interface.
+            <br>
+            (Click image to launch project)
+          </p>
+  </section>
+  <hr>
+
+  <h1>My Achievement</h1>
+  <!--a visit to London-->
+  <section>
+    <div id="image">
+      <p class="imgThumb">
+        <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/085/045/original/IMG_1096.jpeg?1686381789"
+            width="500px" alt="a visit to london" id="img-project" onclick="window.location='https://www.shecodes.io/contests/dream-travel-destination-challenge/results'"/>
+      </p>
+    </div>
+    <div class="heading">A Visit to Bagan</div>
+          <p>
+            I won the first place at the Dream Travel Destination Challenge hosted by SheCodes with this project.
+            <br>
+            (Click image to launch project)
+          </p>
+  </section>
+
+  <br><br><br>
 
   <footer class="fixed-bottom">
     <a href="./home.html" class="a-for-footer"><i class="fa-solid fa-house"></i></a>
@@ -340,10 +306,6 @@
     function onload() {
       document.body.classList.toggle('dark-mode', localStorage.getItem('darkmode') === 'true');
     }
-
-
   </script>
-
 </body>
-
 </html>
